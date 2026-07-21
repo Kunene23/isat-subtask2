@@ -1,4 +1,4 @@
-# Decimal to Hexadecimal
+# Function to convert decimal to Hexadecimal
 string decimalToHexadecimal(int num) {
     if (num == 0) return "0";
     string hex = "";

@@ -1,0 +1,8 @@
+# function to convert Binary to Decimal using positional notation
+int binaryToDecimal(string bin) {
+    int dec = 0;
+    for (char c : bin) {
+        dec = dec * 2 + (c - '0');
+    }
+    return dec;
+}

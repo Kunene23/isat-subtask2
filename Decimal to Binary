@@ -1,13 +1,11 @@
 # Function to convert Decimal to Binary using repeated dividsion by 2
-int decimalToBinary(int decimal) {
-  if (decimal == 0)return 0;
-
-  int binary = 0, base = 0;
-  while ( decimal > 0 );  {
-    int remainder = decimal % 2;
-    binary = binary + remainder * base;
-    decimal = decimal/2;
-    base = base * 10;
+string decimalToBinary(int num) {
+    if (num == 0) return "0";
+    string bin = "";
+    while (num > 0) {
+        bin += (num % 2) + '0';
+        num /= 2;
     }
-  return binary;
-  }
+    reverse(bin.begin(), bin.end());
+    return bin;
+}
